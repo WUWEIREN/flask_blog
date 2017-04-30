@@ -1,0 +1,8 @@
+im-r common.txt
+ForgeryPy==0.1
+Pygments==1.6
+colorama==0.3.9
+coverage==4.3.4
+httpie==0.9.9
+requests==2.12.4
+selenium==3.3.3

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Dear {{ user.username }}</p>
+    <p>Welcome to Flasky!</p>
+    <p>To confirm your account click on the following link</p>
+    <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">click here</a>
+    <p>or paste the following link to your browser</p>
+    {{ url_for('auth.confirm', token=token, _external=True) }}
+    <p>Sincerely,</p>
+    <p>The Flasky Team</p>
+    <p><small>Note: replies to this address are not monitored</small></p>
+</body>
+</html>
